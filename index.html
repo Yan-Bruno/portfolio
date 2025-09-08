@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Portfolio - Yan Bruno</title>
+</head>
+
+<body>
+    <!-- Efeito animado para o background -->
+    <div class="animated-bg-overlay">
+        <canvas id="particles-js"></canvas>
+    </div>
+
+    <!-- Header -->
+    <header class="active">
+        <a href="#" class="header-logo">Yan.</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#servico">Serviços</a>
+            <a href="#resumo">Resumo</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#feedbacks">Feedbacks</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+    </header>
+
+    <!-- Efeito de loading -->
+    <div class="bars-box active">
+        <div class="bars" style="--i:6;"></div>
+        <div class="bars" style="--i:5;"></div>
+        <div class="bars" style="--i:4;"></div>
+        <div class="bars" style="--i:3;"></div>
+        <div class="bars" style="--i:2;"></div>
+        <div class="bars" style="--i:1;"></div>
+    </div>
+
+    <!-- Seção Home -->
+    <section class="home active" id="home">
+        <div class="home-detail">
+            <h1>Yan Bruno.</h1>
+            <h2>
+                Eu sou
+                <span style="--i:4;" data-text="Desenvolvedor">Desenvolvedor</span>
+                <span style="--i:3;" data-text="Frontend">Frontend</span>
+                <span style="--i:2;" data-text="Backend">Backend</span>
+                <span style="--i:1;" data-text="UX/UI">UX/UI</span>
+            </h2>
+            <p>
+                Sou estudante de ciência da computação pela UFES, apaixonado por tecnologia e design de interfaces.
+                Tenho me dedicado ao desenvolvimento web com HTML, CSS, JavaScript, React, TypeScript, Next.js,
+                Tailwind.
+                Busco criar experiências digitais intuitivas, responsivas e agradáveis para o usuário.
+            </p>
+            <div class="btn-sci">
+                <a href="assets/Curriculo - Yan Bruno do Vale Gomes .pdf" class="btn">Baixe meu CV</a>
+                <div class="sci">
+                    <a href="https://github.com/Yan-Bruno"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yan-bruno-do-vale-gomes-b4379b2ab"><i
+                            class="bx bxl-linkedin"></i></a>
+                    <a href="#"><i class="bx bxl-behance"></i></a>
+                    <a href="#"><i class="bx bxl-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="assets/profile.png" alt="Foto de perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="service" id="servico">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
+        <div class="service-container">
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-code-alt"></i>
+                    </div>
+                    <h3>Dev Web</h3>
+                    <p>
+                        Desenvolvo sites e aplicações web responsivas, utilizando as melhores práticas e tecnologias de
+                        programação e design atuais.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-brush"></i>
+                    </div>
+                    <h3>UX/UI</h3>
+                    <p>Crio logos e protótipos para design web com o objetivo de ajudar no desenvolvimento. Além de
+                        oferecer experiência agradável aos usuários.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-code-block"></i>
+                    </div>
+                    <h3>Dev Backend</h3>
+                    <p>Estudo atualmente algumas tecnologias para desenvolvimento backend, estrutura de dados e
+                        escalabilidade.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-layout"></i>
+                    </div>
+                    <h3>Dev Frontend</h3>
+                    <p>Desenvolvo interfaces modernas e responsivas utilizando as melhores práticas de design e UX/UI.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-palette"></i>
+                    </div>
+                    <h3>Design Gráfico</h3>
+                    <p>Já trabalhei no time de mídia de minha igreja, como design gráfico.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="services-box">
+                    <div class="icon">
+                        <i class="bx bx-purchase-tag-alt"></i>
+                    </div>
+                    <h3>Marketing</h3>
+                    <p>Participo da equipe de marketing digital na Adapti Empresa Junior de Computação da Ufes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Resumo -->
+    <section class="resume active" id="resumo">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Me Contrate!</h2>
+                <p class="desc">Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
+                <button class="resume-btn active" type="button" data-section="experience">Experiência</button>
+                <button class="resume-btn" type="button" data-section="education">Educação</button>
+                <button class="resume-btn" type="button" data-section="skills">Habilidades</button>
+                <button class="resume-btn" type="button" data-section="soft-skills">Soft Skills</button>
+                <button class="resume-btn" type="button" data-section="sobre">Sobre Mim</button>
+            </div>
+
+            <div class="resume-box">
+                <!-- Experiência -->
+                <div class="resume-detail experience active" id="experience">
+                    <h2 class="heading">Minhas <span>Experiências</span></h2>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Desenvolvimento</h3>
+                            <p class="company">ENCOMP</p>
+                            <p class="desc">
+                                Participei da equipe de infraestrutura e atualização do site do Encomp, evento de
+                                Computação da UFES.
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2025 - Hoje</p>
+                            <h3>Marketing Digital</h3>
+                            <p class="company">Adapti</p>
+                            <p class="desc">
+                                Crio interfaces responsivas com UX/UI e colaboro em soluções,
+                                alinhadas ao marketing.
+                                Participo de eventos de empresas juniores.
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2025 - Hoje</p>
+                            <h3>Desenvolvimento Fullstack</h3>
+                            <p class="company">Curso da Udemy</p>
+                            <p class="desc">
+                                Tenho experimentado criar projetos práticos como o e-commerce BEWEAR, que me
+                                ajudaram a evoluir em fullstack e desenvolvimento com apoio de IA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educação -->
+                <div class="resume-detail education" id="education">
+                    <h2 class="heading">Minha <span>Educação</span></h2>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2015</p>
+                            <h3>Intercâmbio de Inglês</h3>
+                            <p class="company">US-Brazil Connect</p>
+                            <p class="desc">Participei de imersão com nativos americanos, remotamente e presencialmente
+                                no Brasil
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2016</p>
+                            <h3>Curso de Libras</h3>
+                            <p class="company">Gestos que marcam - PIBSC</p>
+                            <p class="desc">Sou formado em LETRAS/LIBRAS pelo curso gestos que Marcam.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2016</p>
+                            <h3>Curso de Inglês</h3>
+                            <p class="company">CNA</p>
+                            <p class="desc">Sou formado em inglês pelo CNA, com dominio oral, leitura, escrita e
+                                conversação.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2014 - 2016</p>
+                            <h3>Médio-Técnico Mecânica</h3>
+                            <p class="company">SESI-SENAI</p>
+                            <p class="desc">Estudei mecânica industrial em turno integral articulado ao ensino médio
+                                regular.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2020 - Hoje</p>
+                            <h3>Ciência da Computação</h3>
+                            <p class="company">UFES</p>
+                            <p class="desc">Atualmente estou no 10° período de ciência da computação pela UFES.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Curso de Métodos Ágeis</h3>
+                            <p class="company">Santander Open Academy</p>
+                            <p class="desc"> Metodologias ágeis e Gestão de projetos:
+                                Kanban, Scrum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2025</p>
+                            <h3>Curso de Programação Web</h3>
+                            <p class="company">Online</p>
+                            <p class="desc">Aprendendo tecnologias Frontend: HTML, CSS, JavaScript, TypeScript,
+                                Tailwind, React.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Técnicas -->
+                <div class="resume-detail skills" id="skills">
+                    <h2 class="heading">Minhas <span>Habilidades</span></h2>
+                    <div class="resume-list">
+                        <div class="resume-item"><i class="bx bxl-html5"></i><span>HTML5</span></div>
+                        <div class="resume-item"><i class="bx bxl-css3"></i><span>CSS3</span></div>
+                        <div class="resume-item"><i class="bx bxl-javascript"></i><span>JavaScript</span></div>
+                        <div class="resume-item"><i class="bx bxl-react"></i><span>React.js</span></div>
+                        <div class="resume-item"><i class="bx bxl-typescript"></i><span>TypeScript</span></div>
+                        <div class="resume-item"><i class="bx bxl-nodejs"></i><span>Node.js</span></div>
+                        <div class="resume-item"><i class="bx bxl-tailwind-css"></i><span>Tailwind CSS</span></div>
+                        <div class="resume-item"><i class="bx bxl-github"></i><span>GitHub</span></div>
+                        <div class="resume-item"><i class='bx bxl-figma'></i><span>Figma</span></div>
+                        <div class="resume-item">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                <title>Next.js</title>
+                                <path
+                                    d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z" />
+                            </svg><span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="resume-detail soft-skills" id="soft-skills">
+                    <h2 class="heading">Minhas <span>Soft Skills</span></h2>
+                    <div class="resume-list">
+                        <div class="resume-item"><i class='bx bx-user-voice'></i><span>Comunicação</span></div>
+                        <div class="resume-item"><i class='bx bx-group'></i><span>Trabalho em equipe</span></div>
+                        <div class="resume-item"><i class='bx bx-bulb'></i><span>Resolução de problemas</span></div>
+                        <div class="resume-item"><i class='bx bx-time-five'></i><span>Gestão do tempo</span></div>
+                        <div class="resume-item"><i class='bx bx-target-lock'></i><span>Foco em resultados</span></div>
+                        <div class="resume-item"><i class='bx bx-brain'></i><span>Pensamento crítico</span></div>
+                        <div class="resume-item"><i class='bx bx-dna'></i><span>Adaptabilidade</span></div>
+                        <div class="resume-item"><i class='bx bx-happy-heart-eyes'></i><span>Empatia</span></div>
+                        <div class="resume-item"><i class='bx bx-brush'></i><span>Criatividade</span></div>
+                        <div class="resume-item"><i class='bx bx-refresh'></i><span>Resiliência</span></div>
+                        <div class="resume-item"><i class='bx bx-bolt-circle'></i><span>Proatividade</span></div>
+                        <div class="resume-item"><i class='bx bx-calendar-check'></i><span>Organização</span></div>
+                    </div>
+                </div>
+
+                <!-- Sobre Mim -->
+                <div class="resume-detail sobre" id="sobre">
+                    <h2 class="heading">Sobre <span>Mim</span></h2>
+                    <p class="desc">
+                        Sou apaixonado por tecnologia, inovação e design. Busco sempre aprender novas ferramentas e
+                        tendências do mercado para entregar o melhor resultado possível em cada projeto.
+                    </p>
+                    <div class="resume-list-data">
+                        <div class="resume-item">
+                            <p class="data">Nome: <span> Yan Bruno</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Gênero: <span> Masculino</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Idade: <span> 26 anos</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Status: <span> Solteiro</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Cidade: <span> Rio de Janeiro</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Nacionalidade: <span> Brasileiro</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Disponibilidade: <span> Dia Todo</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">E-mail: <span> valebrunoyan@gmail.com</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Linguagens: <span> Inglês, Português</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Experiência: <span> 1 ano</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Freelance: <span> Disponível</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="data">Telefone: <span> 21-9757-45779</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="portfolio active" id="projetos">
+        <h2 class="heading">Últimos <span>Projetos</span></h2>
+        <div class="portfolio-container">
+            <!-- Coluna de Textos/Descrições -->
+            <div class="portfolio-box">
+                <div class="portfolio-details-wrapper">
+                    <!-- Projeto 1 -->
+                    <div class="portfolio-detail active">
+                        <p class="numb">01</p>
+                        <h3>BEWEAR E-COMMERCE</h3>
+                        <br>
+                        <p>Loja completa virtual de roupas com design moderno e responsivao.</p>
+                        <div class="tech">
+                            <p><span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>,
+                                <span>PostgreeSQL</span>, <span>React</span>, <span>Stripe</span>
+                            </p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-detail">
+                        <p class="numb">02</p>
+                        <h3>DOCERIA (EM BREVE)</h3>
+                        <br>
+                        <p>Sistema de loja virtual com carrinho de compras e integração de pagamentos.</p>
+                        <div class="tech">
+                            <p><span>React</span>, <span>Node.js</span>, <span>MongoDB</span></p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-detail">
+                        <p class="numb">03</p>
+                        <h3>APLICATIVO DE TAREFAS</h3>
+                        <br>
+                        <p>Organizador pessoal com sincronização em nuvem e notificações.</p>
+                        <div class="tech">
+                            <p><span>Vue.js</span>, <span>Firebase</span>, <span>SCSS</span></p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-detail">
+                        <p class="numb">04</p>
+                        <h3>DASHBOARD ANALYTICS</h3>
+                        <br>
+                        <p>Painel administrativo com gráficos interativos e exportação de dados.</p>
+                        <div class="tech">
+                            <p><span>Angular</span>, <span>TypeScript</span>, <span>Chart.js</span></p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-detail">
+                        <p class="numb">05</p>
+                        <h3>BLOG PESSOAL</h3>
+                        <br>
+                        <p>Plataforma de publicação com sistema de comentários e busca.</p>
+                        <div class="tech">
+                            <p><span>Next.js</span>, <span>Tailwind CSS</span>, <span>GraphQL</span></p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-detail">
+                        <p class="numb">06</p>
+                        <h3>APP DE CLIMA</h3>
+                        <br>
+                        <p>Aplicativo de previsão do tempo com geolocalização e histórico.</p>
+                        <div class="tech">
+                            <p><span>Svelte</span>, <span>OpenWeather API</span>, <span>PWA</span></p>
+                        </div>
+                        <div class="live-github">
+                            <a href="#" class="btn-icon" title="Ver ao vivo">
+                                <i class='bx bx-right-top-arrow-circle'></i>
+                                <span>Demo</span>
+                            </a>
+                            <a href="#" class="btn-icon" title="Código no GitHub">
+                                <i class='bx bxl-github'></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna de Imagens -->
+            <div class="portfolio-box">
+                <div class="portfolio-carrousel">
+                    <div class="img-slide-item active">
+                        <img src="assets/bewear.jpg" alt="BEWEAR E-COMMERCE DE ROUPA" />
+                    </div>
+                    <div class="img-slide-item">
+                        <img src="assets/portfolio2.jpg" alt="E-commerce Completo" />
+                    </div>
+                    <div class="img-slide-item">
+                        <img src="assets/portfolio3.jpg" alt="Aplicativo de Tarefas" />
+                    </div>
+                    <div class="img-slide-item">
+                        <img src="assets/portfolio4.jpg" alt="Dashboard Analytics" />
+                    </div>
+                    <div class="img-slide-item">
+                        <img src="assets/portfolio5.jpg" alt="Blog Pessoal" />
+                    </div>
+                    <div class="img-slide-item">
+                        <img src="assets/portfolio6.jpg" alt="App de Clima" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="navigation">
+            <div class="button-arrow-left" aria-label="Projeto anterior">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+            <div class="button-arrow-right" aria-label="Próximo projeto">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Feedbacks -->
+    <section class="feedbacks-section" id="feedbacks">
+        <h2 class="heading">O que dizem sobre <span>mim?</span></h2>
+        <div class="feedbacks-wrapper">
+            <div class="feedbacks-container">
+                <div class="feedback-card">
+                    <img src="assets/batistaPortfolio.jpg" alt="Foto do Cliente A">
+                    <span>Batista Colombi</span>
+                    <p>"Cumpre as
+                        entregas dentro do prazo e possui um ótimo controle de fluxo de tarefas”</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/mateusPortfolio.jpeg" alt="Foto da Cliente B">
+                    <span>Mateus Almeida</span>
+                    <p>"Proatividade e produtividade na realização de tarefas em grupo."</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
+                    <span>Thiago Figueiredo</span>
+                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/zucatelli.png" alt="Mateus Zucateli">
+                    <span>Matheus Albani Zucateli</span>
+                    <p>"Muito esforçado e criativo, trabalha bem em grupo, é proativo.”</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/batistaPortfolio.jpg" alt="Foto do Cliente A">
+                    <span>Batista Colombi</span>
+                    <p>"Cumpre as
+                        entregas dentro do prazo e possui um ótimo controle de fluxo de tarefas”</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/mateusPortfolio.jpeg" alt="Foto da Cliente B">
+                    <span>Mateus Almeida</span>
+                    <p>"Proatividade e produtividade na realização de tarefas em grupo"</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
+                    <span>Thiago Figueiredo</span>
+                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/zucatelli.png" alt="Mateus Zucatelli">
+                    <span>Matheus Albani Zucateli</span>
+                    <p>"Muito esforçado e criativo, trabalha bem em grupo, é proativo.”</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/mateusPortfolio.jpeg" alt="Foto do Mateus Almeida">
+                    <span>Mateus Almeida</span>
+                    <p>"Proatividade e produtividade na realização de tarefas em grupo"</p>
+                </div>
+                <div class="feedback-card">
+                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
+                    <span>Thiago Figueiredo</span>
+                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact active" id="contatos">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Vamos Trabalhar <span></span>Juntos?</h2>
+                <p class="description">
+                    Entre em contato comigo, para discutirmos sobre projetos, ou oportunidades,
+                    preencha o formulário ao lado para falar comigo.
+                </p>
+                <div class="contact-detail">
+                    <i class='bx bx-phone'></i>
+                    <div class="detail">
+                        <p>Telefone</p>
+                        <p>(+55)21-975745779</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bx-mail-send'></i>
+                    <div class="detail">
+                        <p>E-mail</p>
+                        <p>valebrunoyan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bx-map'></i>
+                    <div class="detail">
+                        <p>Endereço</p>
+                        <p>Rio de Janeiro, Brasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="https://formsubmit.co/valebrunoyan@gmail.com" method="POST">
+                    <h2 class="heading">Me <span>contate</span></h2>
+                    <div class="field-box">
+                        <input type="text" name="nome" placeholder="Nome Completo" required>
+                        <input type="email" name="email" placeholder="Endereço de E-mail" required>
+                        <input type="text" name="telefone" placeholder="Telefone" required>
+                        <input type="text" name="assunto" placeholder="Assunto do E-mail" required>
+                        <textarea name="texto" id="" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <p>&copy; 2025 Yan.Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const textSlides = document.querySelectorAll('.portfolio-detail');
+        const imgSlides = document.querySelectorAll('.img-slide-item');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            textSlides.forEach((el, i) => {
+                el.classList.toggle('active', i === index);
+            });
+            imgSlides.forEach((el, i) => {
+                el.classList.toggle('active', i === index);
+            });
+        }
+
+        document.querySelector('.button-arrow-right').onclick = () => {
+            if (currentSlide < textSlides.length - 1) currentSlide++;
+            showSlide(currentSlide);
+        };
+        document.querySelector('.button-arrow-left').onclick = () => {
+            if (currentSlide > 0) currentSlide--;
+            showSlide(currentSlide);
+        };
+
+        // Inicializa
+        showSlide(currentSlide);
+    </script>
+</body>
+
+</html>
+
+<style>
+    .img-slide-item,
+    .portfolio-detail {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s;
+    }
+
+    .img-slide-item.active,
+    .portfolio-detail.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+</style>
