@@ -975,6 +975,26 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .home-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-img .img-box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-img .img-box .img-item {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .portfolio-box .numb {
         font-size: 6rem;
     }
@@ -1494,4 +1514,5 @@ section {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
 }
