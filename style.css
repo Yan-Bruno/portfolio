@@ -41,8 +41,8 @@
         color: var(--main-color);
     }
 
-    --bg-color: #99cd85;
-    --second-background-color: #7fa653;
+    --bg-color: #071701;
+    --second-background-color: #194012;
     --main-color: #90a955;
     --white-color: #ffffff;
     --disabled-color: #fff3;
@@ -1516,6 +1516,7 @@ section {
     height: 100%;
 
 }
+
 
 
 
