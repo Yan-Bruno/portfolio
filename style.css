@@ -2365,6 +2365,70 @@ section {
     }
 }
 
+/* BOTÕES FLUTUANTES */
+.floating-actions {
+    position: fixed;
+    right: clamp(1.5rem, 2.5vw, 3rem);
+    bottom: clamp(1.5rem, 2.5vw, 3rem);
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.floating-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.6rem;
+    height: 4.6rem;
+    color: var(--white-color);
+    border: .1rem solid rgba(255, 255, 255, .16);
+    border-radius: 50%;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .3);
+    transition: transform .3s ease, background-color .3s ease, box-shadow .3s ease;
+}
+
+.floating-action i {
+    font-size: 2.5rem;
+}
+
+.whatsapp-action {
+    background: var(--accent-color);
+}
+
+.back-to-top {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+.floating-action:hover {
+    transform: translateY(-.4rem) scale(1.05);
+    box-shadow: 0 1.2rem 2.6rem rgba(0, 0, 0, .38);
+}
+
+.whatsapp-action:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.back-to-top:hover {
+    background: var(--soft-color);
+}
+
+@media (max-width: 450px) {
+    .floating-actions {
+        right: 1.5rem;
+        bottom: 1.5rem;
+        gap: 1rem;
+    }
+
+    .floating-action {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+}
+
 
 
 
