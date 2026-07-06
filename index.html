@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Portfolio - Yan Bruno</title>
 </head>
@@ -18,13 +19,13 @@
     <!-- Header -->
     <header class="active">
         <a href="#" class="header-logo">Yan.</a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav>
+        <i class="bx bx-menu" id="menu-icon" role="button" tabindex="0" aria-label="Abrir menu" aria-expanded="false"></i>
+        <nav aria-label="Navegação principal">
             <a href="#home">Home</a>
             <a href="#servico">Serviços</a>
+            <a href="#processo">Processo</a>
             <a href="#resumo">Resumo</a>
             <a href="#projetos">Projetos</a>
-            <a href="#feedbacks">Feedbacks</a>
             <a href="#contatos">Contatos</a>
         </nav>
     </header>
@@ -45,17 +46,15 @@
             <h1>Yan Bruno.</h1>
             <h2>
                 Eu sou
-                <span style="--i:4;" data-text="Desenvolvedor">Desenvolvedor</span>
+                <span style="--i:4;" data-text="Desenvolvedor FullStack">Desenvolvedor</span>
                 <span style="--i:3;" data-text="Frontend">Frontend</span>
                 <span style="--i:2;" data-text="Backend">Backend</span>
                 <span style="--i:1;" data-text="UX/UI">UX/UI</span>
             </h2>
             <p>
-                Sou estudante de ciência da computação pela UFES, apaixonado por tecnologia e design de interfaces.
-                Tenho me dedicado ao desenvolvimento web com HTML, CSS, JavaScript, React, TypeScript, Next.js,
-                Tailwind.
-                Busco criar experiências digitais intuitivas, responsivas e agradáveis para o usuário.
-            </p>
+    Sou estudante de Ciência da Computação na UFES e desenvolvedor Full Stack, apaixonado por tecnologia, design de interfaces e desenvolvimento web. Tenho experiência com HTML, CSS, JavaScript, React, TypeScript, Next.js, Node.js, Tailwind CSS, Docker e PostgreSQL, buscando criar aplicações modernas, responsivas e bem estruturadas. Estou em constante aprendizado, sempre focado em evoluir tecnicamente e desenvolver soluções que gerem valor para as pessoas.
+</p>
+
             <div class="btn-sci">
                 <a href="assets/Curriculo - Yan Bruno do Vale Gomes .pdf" class="btn">Baixe meu CV</a>
                 <div class="sci">
@@ -140,6 +139,51 @@
                     <p>Participo da equipe de marketing digital na Adapti Empresa Junior de Computação da Ufes.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Seção Processo de Trabalho -->
+    <section class="work-process" id="processo">
+        <h2 class="heading">Como eu <span>Trabalho</span></h2>
+        <p class="work-process-intro">
+            Transformo ideias em soluções digitais através de um processo organizado, colaborativo e focado em resultados.
+        </p>
+
+        <div class="work-process-container">
+            <article class="work-process-card">
+                <span class="work-process-number">01</span>
+                <div class="work-process-icon"><i class='bx bx-search-alt'></i></div>
+                <h3>Descoberta</h3>
+                <p>Entendo as necessidades, os objetivos e o público para definir a melhor direção para o projeto.</p>
+            </article>
+
+            <article class="work-process-card">
+                <span class="work-process-number">02</span>
+                <div class="work-process-icon"><i class='bx bx-pencil'></i></div>
+                <h3>Design</h3>
+                <p>Organizo a experiência e desenvolvo interfaces intuitivas, consistentes e visualmente agradáveis.</p>
+            </article>
+
+            <article class="work-process-card">
+                <span class="work-process-number">03</span>
+                <div class="work-process-icon"><i class='bx bx-code-alt'></i></div>
+                <h3>Implementação</h3>
+                <p>Transformo o planejamento em código limpo, responsivo e preparado para diferentes dispositivos.</p>
+            </article>
+
+            <article class="work-process-card">
+                <span class="work-process-number">04</span>
+                <div class="work-process-icon"><i class='bx bx-check-shield'></i></div>
+                <h3>Testes</h3>
+                <p>Valido usabilidade, desempenho, acessibilidade e responsividade antes da entrega da solução.</p>
+            </article>
+
+            <article class="work-process-card">
+                <span class="work-process-number">05</span>
+                <div class="work-process-icon"><i class='bx bx-wrench'></i></div>
+                <h3>Manutenção</h3>
+                <p>Acompanho a solução, realizo melhorias e mantenho o projeto seguro, estável e atualizado.</p>
+            </article>
         </div>
     </section>
 
@@ -248,27 +292,75 @@
                 </div>
 
                 <!-- Habilidades Técnicas -->
-                <div class="resume-detail skills" id="skills">
-                    <h2 class="heading">Minhas <span>Habilidades</span></h2>
-                    <div class="resume-list">
-                        <div class="resume-item"><i class="bx bxl-html5"></i><span>HTML5</span></div>
-                        <div class="resume-item"><i class="bx bxl-css3"></i><span>CSS3</span></div>
-                        <div class="resume-item"><i class="bx bxl-javascript"></i><span>JavaScript</span></div>
-                        <div class="resume-item"><i class="bx bxl-react"></i><span>React.js</span></div>
-                        <div class="resume-item"><i class="bx bxl-typescript"></i><span>TypeScript</span></div>
-                        <div class="resume-item"><i class="bx bxl-nodejs"></i><span>Node.js</span></div>
-                        <div class="resume-item"><i class="bx bxl-tailwind-css"></i><span>Tailwind CSS</span></div>
-                        <div class="resume-item"><i class="bx bxl-github"></i><span>GitHub</span></div>
-                        <div class="resume-item"><i class='bx bxl-figma'></i><span>Figma</span></div>
-                        <div class="resume-item">
-                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
-                                <title>Next.js</title>
-                                <path
-                                    d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z" />
-                            </svg><span>Next.js</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Habilidades Técnicas -->
+<div class="resume-detail skills" id="skills">
+    <h2 class="heading">Minhas <span>Habilidades</span></h2>
+
+    <div class="resume-list">
+        <div class="resume-item">
+            <i class="bx bxl-html5"></i>
+            <span>HTML5</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-css3"></i>
+            <span>CSS3</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-javascript"></i>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-react"></i>
+            <span>React.js</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-typescript"></i>
+            <span>TypeScript</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-nodejs"></i>
+            <span>Node.js</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-tailwind-css"></i>
+            <span>Tailwind CSS</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-github"></i>
+            <span>GitHub</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-figma"></i>
+            <span>Figma</span>
+        </div>
+
+        <div class="resume-item">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                <title>Next.js</title>
+                <path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/>
+            </svg>
+            <span>Next.js</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="bx bxl-docker"></i>
+            <span>Docker</span>
+        </div>
+
+        <div class="resume-item">
+            <i class="devicon-postgresql-plain"></i>
+            <span>PostgreSQL</span>
+        </div>
+    </div>
+</div>
 
                 <!-- Soft Skills -->
                 <div class="resume-detail soft-skills" id="soft-skills">
@@ -353,9 +445,7 @@
                         <br>
                         <p>Loja completa virtual de roupas com design moderno e responsivao.</p>
                         <div class="tech">
-                            <p><span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>,
-                                <span>PostgreeSQL</span>, <span>React</span>, <span>Stripe</span>
-                            </p>
+                            <p><span>PostgreSQL</span>, <span>Docker</span></p>
                         </div>
                         <div class="live-github">
                             <a href="#" class="btn-icon" title="Ver ao vivo">
@@ -503,75 +593,15 @@
 
         <!-- Navegação -->
         <div class="navigation">
-            <div class="button-arrow-left" aria-label="Projeto anterior">
+            <button class="button-arrow-left" type="button" aria-label="Projeto anterior">
                 <i class='bx bx-chevron-left'></i>
-            </div>
-            <div class="button-arrow-right" aria-label="Próximo projeto">
+            </button>
+            <button class="button-arrow-right" type="button" aria-label="Próximo projeto">
                 <i class='bx bx-chevron-right'></i>
-            </div>
+            </button>
         </div>
     </section>
 
-    <!-- Seção Feedbacks -->
-    <section class="feedbacks-section" id="feedbacks">
-        <h2 class="heading">O que dizem sobre <span>mim?</span></h2>
-        <div class="feedbacks-wrapper">
-            <div class="feedbacks-container">
-                <div class="feedback-card">
-                    <img src="assets/batistaPortfolio.jpg" alt="Foto do Cliente A">
-                    <span>Batista Colombi</span>
-                    <p>"Cumpre as
-                        entregas dentro do prazo e possui um ótimo controle de fluxo de tarefas”</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/mateusPortfolio.jpeg" alt="Foto da Cliente B">
-                    <span>Mateus Almeida</span>
-                    <p>"Proatividade e produtividade na realização de tarefas em grupo."</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
-                    <span>Thiago Figueiredo</span>
-                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/zucatelli.png" alt="Mateus Zucateli">
-                    <span>Matheus Albani Zucateli</span>
-                    <p>"Muito esforçado e criativo, trabalha bem em grupo, é proativo.”</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/batistaPortfolio.jpg" alt="Foto do Cliente A">
-                    <span>Batista Colombi</span>
-                    <p>"Cumpre as
-                        entregas dentro do prazo e possui um ótimo controle de fluxo de tarefas”</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/mateusPortfolio.jpeg" alt="Foto da Cliente B">
-                    <span>Mateus Almeida</span>
-                    <p>"Proatividade e produtividade na realização de tarefas em grupo"</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
-                    <span>Thiago Figueiredo</span>
-                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/zucatelli.png" alt="Mateus Zucatelli">
-                    <span>Matheus Albani Zucateli</span>
-                    <p>"Muito esforçado e criativo, trabalha bem em grupo, é proativo.”</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/mateusPortfolio.jpeg" alt="Foto do Mateus Almeida">
-                    <span>Mateus Almeida</span>
-                    <p>"Proatividade e produtividade na realização de tarefas em grupo"</p>
-                </div>
-                <div class="feedback-card">
-                    <img src="assets/thiagoPortfolio.jpeg" alt="Foto do Thiago">
-                    <span>Thiago Figueiredo</span>
-                    <p>"Trabalhar com ele foi uma experiência incrível, muito profissional."</p>
-                </div>
-
-            </div>
-    </section>
 
     <!-- Seção Contato -->
     <section class="contact active" id="contatos">
@@ -623,54 +653,12 @@
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-        <p>&copy; 2025 Yan.Todos os direitos reservados.</p>
+        <p>&copy; 2026 Yan.Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        const textSlides = document.querySelectorAll('.portfolio-detail');
-        const imgSlides = document.querySelectorAll('.img-slide-item');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            textSlides.forEach((el, i) => {
-                el.classList.toggle('active', i === index);
-            });
-            imgSlides.forEach((el, i) => {
-                el.classList.toggle('active', i === index);
-            });
-        }
-
-        document.querySelector('.button-arrow-right').onclick = () => {
-            if (currentSlide < textSlides.length - 1) currentSlide++;
-            showSlide(currentSlide);
-        };
-        document.querySelector('.button-arrow-left').onclick = () => {
-            if (currentSlide > 0) currentSlide--;
-            showSlide(currentSlide);
-        };
-
-        // Inicializa
-        showSlide(currentSlide);
-    </script>
 </body>
 
 </html>
-
-<style>
-    .img-slide-item,
-    .portfolio-detail {
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.5s;
-    }
-
-    .img-slide-item.active,
-    .portfolio-detail.active {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-</style>
 
 

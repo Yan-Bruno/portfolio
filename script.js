@@ -3,9 +3,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('#menu-icon');
     const navbar = document.querySelector('header nav');
 
-    menuIcon.addEventListener('click', () => {
+    const toggleMenu = () => {
         menuIcon.classList.toggle('bx-x');
         navbar.classList.toggle('active');
+        const isOpen = navbar.classList.contains('active');
+        menuIcon.setAttribute('aria-expanded', String(isOpen));
+        menuIcon.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    };
+
+    menuIcon.addEventListener('click', toggleMenu);
+    menuIcon.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleMenu();
+        }
     });
 
     // Navegação
@@ -22,6 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 activePage();
                 link.classList.add('active');
             }
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('bx-x');
+            menuIcon.setAttribute('aria-expanded', 'false');
+            menuIcon.setAttribute('aria-label', 'Abrir menu');
         });
     });
 
@@ -301,3 +316,24 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Animação ao entrar na tela
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+sections.forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+});
